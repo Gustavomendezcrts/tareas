@@ -1,10 +1,12 @@
 
 ##Se le pregunta al usuario la cantidad de boletos a vender
-try:
-    cantidad = int(input("Ingrese la cantidad de boletos vendidos: "))
-except ValueError:
-    print("Error: Debe ingresar un número entero.")
-    exit()
+while True:
+    try:
+        cantidad = int(input("Ingrese la cantidad de boletos vendidos: "))
+        break
+    except ValueError:
+        print("Error: Debe ingresar un número entero.")
+        exit()
 ##iniciar variable totalIngresos
 totalIngresos = 0
 
